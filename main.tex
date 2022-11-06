@@ -45,7 +45,7 @@
 Zamysł gry opiera się na klasycznej formule gier RTS \emph{(Real Time Strategy - ang. strategii czasu rzeczywistego)}. Ekran gry podzielony jest na mapę oraz nakładkę stanowiącą interfejs gracza. Gracz wydaje polecenia przy użyciu myszy oraz skrótów klawiaturowych. Rozgrywka polega na zdobywaniu punktów poprzez kontrolowanie odpowiednich sektorów na mapie. Aby to osiągnąć gracz musi budować odpowiednie struktury oraz oddziały, utrzymywać kontrolę nad ważnymi dla niego zasobami oraz tworzyć odpowiednią infrastrukturę do ich przetwarzania, co wymaga od niego umiejętności planowania i zmysłu strategicznego. Przeciwnikiem gracza jest sztuczna inteligencja, próbujące zrealizować identyczne cele.
 
 \section{Co odróżnia mój tytuł?}
-W ciągu ostatnich lat gry strategiczne podzieliły się na dwa rodzaje: skupiające się na rywalizacji rankingowej między ludzkimi przeciwnikami w rozgrywkach sieciowych, wymagające dużo czasu, zaangażowania, czy energii od graczy oraz ich kompletne przeciwieństwa-gry ekonomiczne z powolnym postępem oraz kompletnym brakiem lub mocno okrojoną warstwą militarną.
+W ciągu ostatnich lat gry strategiczne podzieliły się na dwa rodzaje: skupiające się na rywalizacji rankingowej między ludzkimi przeciwnikami w rozgrywkach sieciowych, wymagające dużo czasu, zaangażowania i energii od graczy. Oraz ich kompletne przeciwieństwa, gry ekonomiczne z powolnym postępem oraz kompletnym brakiem lub mocno okrojoną warstwą militarną.
 \GameTiTle{} ma być powrotem do korzeni, ma nawiązywać do pierwszych serii gier RTS, gdzie głównym elementem były potyczki z komputerowymi graczami oraz scenariusze do rozgrywania przez pojedynczego gracza. Dzięki temu osoby, które lubią formułę gier tego rodzaju, ale brak im czasu, aby osiągnąć, często wysoki, próg umiejętności do gry sieciowej mogły także się nią cieszyć. 
 W \GameTiTle{} warstwa ekonomiczna ma być nie tylko równie ważna i angażujące, ale też równie rozbudowana co warstwa militarna.
 
@@ -146,7 +146,7 @@ W świecie gry można wyróżnić trzy główne rodzaje obiektów:
 \subsection{Budynki}
 Statyczne obiekty umieszczane przez gracza lub przeciwnika komputerowego. Gracz może wybierać budynki oraz wydawać im polecenia. Obiekty tego rodzaju mogą ulec zniszczeniu w trakcie rozgrywki. Budynki posiadają szereg interakcji z innymi obiektami, np. atak, zmagazynowanie surowca w budynku, etc. Gracze mogą rozpocząć grę z kilkoma tego typu obiektami już pod ich kontrolą.
 \subsection{Oddziały i Pracownicy}
-Obiekty te mogą poruszać się po mapie, podlegają bezpośredniej kontroli gracza, Są mniej wytrzymałe niż budynki. Oddziały mają charakter militarny, ich głównym zdaniem jest atakowanie obiektów przeciwnika. Pracownicy mają charakter cywilny, polecenia, jakie gracz może im wydawać związane są z wydobywaniem zasobów oraz budowaniem budynków.
+Obiekty te mogą poruszać się po mapie, podlegają bezpośredniej kontroli gracza, Obiekty tego rodzaju można niszczyć. Oddziały mają charakter militarny, ich głównym zdaniem jest atakowanie obiektów przeciwnika. Pracownicy mają charakter cywilny, polecenia, jakie gracz może im wydawać związane są z wydobywaniem zasobów oraz budowaniem budynków.
 \subsection{Obiekty otoczenia}
 Statyczne obiekty nienależące do żadnej frakcji, takie jak drzewa, złoża zasobów, ruiny, wraki etc. 
 
@@ -154,15 +154,18 @@ Statyczne obiekty nienależące do żadnej frakcji, takie jak drzewa, złoża za
 Gra opiera się o potyczki z przeciwnikiem SI. Na mapie rozmieszczone są sektory kontroli. Zdobywa się je poprzez budowę specjalnego obiektu w obrębie strefy. Strona posiadająca więcej stref kontroli zdobywa punkty. Tempo ich zdobywania rośnie wraz z przewagą w przejętych strefach kontroli. Strona, która jako pierwsza osiągnie limit punktów, wygrywa. Analogicznie, jeżeli gracz zbierze mniejszą ilość punktów, następuje jego przegrana. Przegrana następuje również wtedy, gdy wszystkie budynki produkcyjne jednego z graczy zostaną zniszczone.
 \section{Główne mechaniki}
 \subsection{Zbieranie surowców}
-Surowce w grze zbierane są poprzez budynki budowane w pobliżu ich złóż. Z budynków wychodzą pracownicy, którzy wydobywają surowiec i zanoszą go z powrotem do budynku. Gdy magazyn budynku się zapełni, pracownik  tragarz rusza do 
+Surowce w grze zbierane są poprzez budynki budowane w pobliżu ich złóż. Z budynków wychodzą pracownicy, którzy wydobywają surowiec i zanoszą go z powrotem do budynku. Gdy magazyn budynku się zapełni, pracownik  tragarz rusza z ładunkiem do innego budynku pełniącego funkcję magazynu. Następnie surowiec jest dalej przetwarzany, zanoszony z powrotem do magazynu i w takiej postaci może być wykorzystany do budowy jednostek budynków, etc.
 \subsection{Budowa budynków} 
 Gracz zleca budowę budynku poprzez wybranie jednostki, następnie z menu akcji jednostki wybiera opcję budowy budynku, a następnie rodzaj budynku, jaki chce umieścić. 
 \subsection{Budowa jednostek}
 Gracz zleca budowę jednostki poprzez wybranie budynku, następnie z menu akcji obiektu wybiera opcję budowy budynku, a następnie rodzaj jednostki, jaką chce zbudować. 
 \subsection{Walka}
 Większość oddziałów atakuje wroga przy pomocy ataków dystansowych. Ataki mogę być bezpośrednie (jeden atak zadaję obrażenia jednemu przeciwnikowi) lub obszarowe (jeden atak zadaje obrażenia wszystkim przeciwnikom w danym obszarze). Jednostki dzielą się na kilka klas, pomiędzy którymi panują zależności na analogicznej zasadzie co w grze \emph{papier, kamień, nożyce}. Niektóre klasy jednostek są bardziej lub mniej skuteczne w walce z innymi jednostkami. Zachęca do gracza do budowania armii o zróżnicowanej kompozycji i sprawia, że każda jednostka na zastosowanie w grze.
+\subsection{Kontrola nad sektorami}
+W centrum każdego sektora znajduję się specjalny obiekt-gniazdo, na którym można umieść budynek dający kontrolę nad sektorem. Gracz (człowiek lub jego przeciwnik SI), który postawi budynek, przejmuje kontrole nad sektorem. 
 \section{Sterowanie}
 Gra do sterowania wykorzystuje mysz oraz skróty klawiaturowe. Przy pomocy mysz gracz steruje kamerą, wydaje polecenia jednostkom na mapie oraz wybiera lokalizację budynków.
+Skróty klawiaturowe można dostosować w opcjach gry.
 % ______________________
 % chapter Front End
 % ______________________
